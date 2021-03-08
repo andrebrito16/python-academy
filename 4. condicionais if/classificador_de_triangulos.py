@@ -6,4 +6,4 @@ def classifica_triangulo(a, b, c):
     else:
         return "escaleno"
     
-print(classifica_triangulo(1, 1, 2))
+print(classifica_triangulo(2, 1, 2))
