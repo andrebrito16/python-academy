@@ -18,3 +18,5 @@ def maior_fator_primo(n):
     return max(fp)
 
 # 243423423330
+
+print(maior_fator_primo(243423423330))
