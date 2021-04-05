@@ -15,21 +15,21 @@ while dinheiro > 0:
     if tipo_aposta == 'n':
         aposta_n = int(input("Faça sua aposta"))
         if numero_computador == aposta_n:
-            dinheiro = dinheiro + 35*aposta_n
-            #print(f"Você ganhou, seu dinheiro agora é {dinheiro}")
+            dinheiro = dinheiro + 35*aposta
+            print(f"Você ganhou, seu dinheiro agora é {dinheiro}")
         else:
-            dinheiro = dinheiro - aposta_n
-            #print(f'Você perdeu, seu dinheiro agora é {dinheiro}')
+            dinheiro = dinheiro - aposta
+            print(f'Você perdeu, seu dinheiro agora é {dinheiro}')
     
     if tipo_aposta == "p":
         par_impar = input("Escolha par ou ímpar [p/i]: ")
         if par_impar == "p" and numero_computador % 2 == 0:
             dinheiro = dinheiro + aposta
-            #print(f"Você ganhou, seu dinheiro agora é {dinheiro}")
+            print(f"Você ganhou, seu dinheiro agora é {dinheiro}")
         elif par_impar == "i" and numero_computador % 2 == 1:
             dinheiro = dinheiro + aposta
-            #print(f"Você ganhou, seu dinheiro agora é {dinheiro}")
+            print(f"Você ganhou, seu dinheiro agora é {dinheiro}")
         else:
             dinheiro = dinheiro - aposta
-            #print(f"Você perdeu, seu dinheiro agora é {dinheiro}")
+            print(f"Você perdeu, seu dinheiro agora é {dinheiro}")
 
