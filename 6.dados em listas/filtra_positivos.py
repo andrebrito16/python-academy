@@ -5,9 +5,6 @@
 #             lista.remove(e)
 
 #     return lista
-
-
-
 def filtra_positivos(lista):
     return list(filter(lambda x: x>0, lista))
 
