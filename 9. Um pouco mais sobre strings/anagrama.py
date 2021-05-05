@@ -1,14 +1,11 @@
 def anagrama(p1, p2):
-  letras_p1 = []
-  letras_p2 = []
 
-  for l1 in p1:
-    letras_p1.append(l1)
+  for l in p1:
+    i2 = p2.find(l)
+    if i2 < 0:
+      return False
+    p2 = p2[:i2] + p2[i2+1:]
   
-  for l2 in p2:
-    letras_p2.append(l2)
+  return len(p2) == 0
 
-  if set(letras_p1) == set(letras_p2):
-    return True
-  else:
-    return False
+print(anagrama("alegriag", "alegriaa"))

@@ -1,0 +1,1 @@
+Olá, teste do arquivo txt sendo lido como Python!
