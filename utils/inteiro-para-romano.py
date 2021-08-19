@@ -13,11 +13,9 @@ for i in range(entradas):
     if numero != 0:
         quotient= numero//x
 
-        #If quotient is not zero output the roman equivalent
         if quotient != 0:
             for y in range(quotient):
                 print(intToroman[x], end="")
 
-        #update numero with remainder
         numero = numero%x
   print()
